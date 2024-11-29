@@ -5,16 +5,14 @@ const UserCard = ({ user }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
       <div className="p-6 flex items-center space-x-6">
-        {/* Profile Picture */}
         <div className="w-20 h-20">
           <img
-            src={`https://i.pravatar.cc/150?img=${user.id}`} // Using dynamic image URL
+            src={`https://i.pravatar.cc/150?img=${user.id}`} 
             alt={user.name}
             className="w-full h-full rounded-full object-cover border-4 border-teal-500"
           />
         </div>
 
-        {/* User Information */}
         <div className="flex flex-col justify-center">
           <h3 className="text-xl font-semibold text-gray-800 mb-1">{user.name}</h3>
           <p className="text-gray-600 mb-1">Email: {user.email}</p>

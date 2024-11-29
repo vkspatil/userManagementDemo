@@ -25,7 +25,6 @@ const UserDetailPage = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-gray-100 p-6">
       <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
         <div className="flex flex-col sm:flex-row items-center p-6 sm:p-8 bg-gradient-to-t from-blue-50 to-white">
-          {/* Profile Picture */}
           <div className="w-24 h-24 sm:w-32 sm:h-32 mr-6 mb-4 sm:mb-0">
             <img
               src={`https://i.pravatar.cc/150?img=${user.id}`} 
@@ -34,7 +33,6 @@ const UserDetailPage = () => {
             />
           </div>
 
-          {/* User Info */}
           <div className="text-center sm:text-left">
             <h2 className="text-3xl font-semibold text-gray-800 mb-2">{user.name}</h2>
             <p className="text-lg text-gray-600">{user.email}</p>
@@ -70,7 +68,6 @@ const UserDetailPage = () => {
           </div>
         </div>
 
-        {/* Back Button */}
         <div className="bg-gray-100 p-4 text-center">
           <Link
             to="/"

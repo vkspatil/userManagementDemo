@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate instead of useHistory
+import { useNavigate } from "react-router-dom"; 
 
 const AddUserPage = () => {
   const [user, setUser] = useState({
@@ -9,7 +9,7 @@ const AddUserPage = () => {
     company: "",
   });
   
-  const navigate = useNavigate(); // useNavigate to navigate programmatically
+  const navigate = useNavigate(); 
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -21,11 +21,9 @@ const AddUserPage = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // Submit user data (for now, just navigate back)
     console.log("User Added: ", user);
     
-    // After submission, navigate to the user list page
-    navigate("/"); // Redirect to the homepage (User List Page)
+    navigate("/"); 
   };
 
   return (
